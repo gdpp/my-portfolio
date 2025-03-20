@@ -1,12 +1,14 @@
 ---
 import "../styles/global.css";
+
+const {title} = Astro.props;
 ---
 
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mi sitio con Astro</title>
+    <title>{title}</title>
   </head>
   <body class="transition-colors duration-300 bg-white text-black dark:bg-black dark:text-white">
     <div class="container mx-auto p-4">
