@@ -1,10 +1,28 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionLayout from "../layouts/SectionLayout.astro";
+import About from "../sections/about.astro";
+import Home from "../sections/home.astro";
+import Journey from "../sections/journey.astro";
+import Lab from "../sections/lab.astro";
+import Skills from "../sections/skills.astro";
 
-import { profile, navigation, social_media} from "../data/home"; 
 ---
 
-<BaseLayout>
-	<h1 class="text-5xl text-opal-900 font-bold dark:text-paper-900">{profile.name}</h1>
-	<h2 class="text-cobalt-300 dark:text-white">{profile.role}</h2>
+<BaseLayout title="Gdpp | Fullstack Developer">
+	<SectionLayout id="home">
+		<Home />
+	</SectionLayout>
+	<SectionLayout title="Code Journey" id="journey">
+		<Journey />
+	</SectionLayout>
+	<SectionLayout title="Skills Forge" id="skills">
+		<Skills />
+	</SectionLayout>
+	<SectionLayout title="Build Lab" id="lab">
+		<Lab />
+	</SectionLayout>
+	<SectionLayout title="Byte of Me" id="me">
+		<About />
+	</SectionLayout>
 </BaseLayout>

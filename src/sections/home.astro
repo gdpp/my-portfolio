@@ -1,0 +1,25 @@
+---
+import NavItem from "../components/NavItem.astro";
+import SocialItem from "../components/SocialItem.astro";
+
+import { profile, navigation, social_media} from "../data/home"; 
+---
+
+<div class="w-full flex flex-col min-h-screen">
+    <h1 class="text-14xl leading-none text- font-bold font-bebas-neue">{profile.name}</h1>
+    <!-- <h2 class="text-8xl leading-none text-gray-blue font-fira-code dark:text-green-light">{profile.role}</h2> -->
+    <!-- <div class="flex items-center justify-center gap-8">
+        {
+            navigation.map(({text, href}) => (
+                <NavItem href={href} text={text} />
+            ))
+        }
+    </div> -->
+    <!-- <div class="flex items-center justify-center gap-4">
+        {
+            social_media.map(({name, icon, url}) => (
+                <SocialItem name={name} icon={icon} url={url} />
+            ))
+        }
+    </div> -->
+</div>

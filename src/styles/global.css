@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@700&family=Inter:opsz@14..32&family=Space+Mono:wght@700&display=swap');
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -5,5 +6,21 @@
 @theme {
     --color-white: #FAFAFF;
     --color-black: #0F0A0A;
-    --color-cobalt-300: #BCC9D2;
+    --text-14xl: 18rem;
+
+    /* Fonts */
+    --font-bebas-neue: "Bebas Neue", sans-serif;
+    --font-fira-code: "Fira Code", monospace;
+    --font-space-mono: "Space Mono", monospace;
+    --font-inter: "Inter", sans-serif;
+
+    /* Light */
+    --color-gray-blue: #BCC9D2;
+    /* Hover colors */
+
+
+    /* Dark */
+    --color-green-light: #DCF763;
+    /* Hover colors */
+
 }

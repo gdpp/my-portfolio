@@ -26,21 +26,21 @@ export const social_media = [
     {
         name: "github",
         icon: "",
-        url: ""
+        url: "https://github.com/gdpp"
     },
     {
         name: "linkedin",
         icon: "",
-        url: ""
+        url: "https://www.linkedin.com/in/gdpp911123"
     },
     {
         name: "x",
         icon: "",
-        url: ""
+        url: "https://x.com/gdpp91"
     },
     {
         name: "dev.to",
         icon: "",
-        url: ""
+        url: "https://dev.to/gdpp"
     }
 ];

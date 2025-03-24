@@ -1,0 +1,25 @@
+---
+
+---
+
+<button id="toggle" class="relative p-2 flex items-center justify-center rounded bg-gray-100 dark:bg-stone-800 transition-all duration-300">
+  
+  <!-- Ghost SVG -->
+  <svg class="w-5 h-5 transition-transform duration-300 dark:scale-90 dark:rotate-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 21c-3 0-5-2-5-5V8a6 6 0 1112 0v8c0 3-2 5-5 5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="transition-opacity duration-300 dark:opacity-0" cx="9" cy="11" r="1" fill="currentColor"/>
+    <circle class="transition-opacity duration-300 dark:opacity-0" cx="15" cy="11" r="1" fill="currentColor"/>
+    <path class="opacity-0 dark:opacity-100 transition-opacity duration-300" d="M9 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+
+</button>
+<script>
+    const toggleTheme = () => {
+        document.documentElement.classList.toggle('dark');
+    };
+
+    const toggle = document.querySelector('#toggle') as HTMLButtonElement;
+
+    toggle.addEventListener('click', toggleTheme);
+
+</script>

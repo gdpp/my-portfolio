@@ -10,6 +10,9 @@ This is my personal portfolio built with Astro 5.4.3 and Tailwind CSS 4.0.13, sh
 * Use of Component pattern.
 * Monolith Architecture with basic separation.
 
+<!-- ## 🗂 Project Structure -->
+
+
 ## 📦 Tech Stack
 * **Frontend**: Astro 5.4.3
 * **Styles**: Tailwind CSS 4.0.13
