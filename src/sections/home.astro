@@ -1,25 +1,19 @@
 ---
-import NavItem from "../components/NavItem.astro";
-import SocialItem from "../components/SocialItem.astro";
+import MenuItem from "../components/MenuItem.astro";
 
-import { profile, navigation, social_media} from "../data/home"; 
+import { profile, navigation} from "../data/home";
 ---
 
-<div class="w-full flex flex-col min-h-screen">
-    <h1 class="text-14xl leading-none text- font-bold font-bebas-neue">{profile.name}</h1>
-    <!-- <h2 class="text-8xl leading-none text-gray-blue font-fira-code dark:text-green-light">{profile.role}</h2> -->
-    <!-- <div class="flex items-center justify-center gap-8">
+<div class="w-full flex justify-center min-h-screen">
+    <h1 class="text-6xl md:text-10xl lg:text-12xl xl:text-14xl leading-none font-bold font-bebas-neue relative pt-2 w-1/2">
+        {profile.name}
+        <!-- <span class="relative block transform -skew-y-3 origin-right rotate-1 sm:text-2xl md:text-4xl lg:text-8xl font-bold text-gray-blue font-fira-code dark:text-green-light">{profile.role}</span> -->
+    </h1>
+    <div class="flex flex-col items-center w-1/2">
         {
             navigation.map(({text, href}) => (
-                <NavItem href={href} text={text} />
+                <MenuItem href={href} text={text} />
             ))
         }
-    </div> -->
-    <!-- <div class="flex items-center justify-center gap-4">
-        {
-            social_media.map(({name, icon, url}) => (
-                <SocialItem name={name} icon={icon} url={url} />
-            ))
-        }
-    </div> -->
+    </div>
 </div>

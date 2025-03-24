@@ -21,26 +21,3 @@ export const navigation = [
         href: "#me"
     }
 ];
-
-export const social_media = [
-    {
-        name: "github",
-        icon: "",
-        url: "https://github.com/gdpp"
-    },
-    {
-        name: "linkedin",
-        icon: "",
-        url: "https://www.linkedin.com/in/gdpp911123"
-    },
-    {
-        name: "x",
-        icon: "",
-        url: "https://x.com/gdpp91"
-    },
-    {
-        name: "dev.to",
-        icon: "",
-        url: "https://dev.to/gdpp"
-    }
-];

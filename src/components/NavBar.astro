@@ -1,10 +1,37 @@
 ---
+import SocialItem from "./SocialItem.astro";
 import ThemeToggle from "./ThemeToggle.astro";
 
-
+const social_media = [
+    {
+        name: "github",
+        icon: "",
+        url: "https://github.com/gdpp"
+    },
+    {
+        name: "linkedin",
+        icon: "",
+        url: "https://www.linkedin.com/in/gdpp911123"
+    },
+    {
+        name: "x",
+        icon: "",
+        url: "https://x.com/gdpp91"
+    },
+    {
+        name: "dev.to",
+        icon: "",
+        url: "https://dev.to/gdpp"
+    }
+];
 ---
-<header class="sticky top-0 w-full flex items-center justify-end p-1">
-    <nav>
-        <ThemeToggle />
+<header class="sticky top-0 w-full flex items-center justify-end px-6 py-2 gap-12">
+    <nav class="">
+        {
+            social_media.map(({name, icon, url}) => (
+                <SocialItem name={name} icon={icon} url={url}/>
+            ))
+        }
     </nav>
+    <ThemeToggle />
 </header>

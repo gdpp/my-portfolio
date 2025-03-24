@@ -6,6 +6,8 @@
 @theme {
     --color-white: #FAFAFF;
     --color-black: #0F0A0A;
+    --text-10xl: 10rem;
+    --text-12xl: 14rem;
     --text-14xl: 18rem;
 
     /* Fonts */
