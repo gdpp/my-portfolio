@@ -6,7 +6,7 @@ interface Props{
 const {title, id} = Astro.props;
 ---
 
-<section id={id} class="min-h-screen pt-14">
+<section id={id} class="min-h-screen pt-15">
     {title && (<h3 class="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-space-mono font-bold">{title}</h3>)}
     <slot />
 </section>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@700&family=Inter:opsz@14..32&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:opsz@14..32&family=Permanent+Marker&family=Space+Mono:wght@700&display=swap');
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -6,30 +6,32 @@
 @theme {
     --color-white: #FAFAFF;
     --color-black: #0F0A0A;
-    --text-10xl: 10rem;
-    --text-14xl: 18rem;
 
     /* Fonts */
+    /* h1 */
     --font-bebas-neue: "Bebas Neue", sans-serif;
-    --font-fira-code: "Fira Code", monospace;
+    /* h2 */
+    --font-marker: "Permanent Marker", cursive;
+    /* h3 */
     --font-space-mono: "Space Mono", monospace;
+    /* body */
     --font-inter: "Inter", sans-serif;
 
     /* Light */
     --color-gray-blue: #BCC9D2;
-    --color-deep-blue: #1F01B9;
+    --color-deep-blue: #072AC8;
 
-    /* Hover colors */
-    --color-neon-green: #39FF14;
+    /* Hover light colors */
+    /* --color-neon-green: #39FF14;
     --color-neon-purple: #D600FF;
-    --color-neon-blue: #00E1FF;
+    --color-neon-blue: #00E1FF; */
 
     /* Dark */
-    /* --color-neon-yellow: #B88C22; */
-    --color-yellow-light: #FFF5BA;
+    --color-mint: #98FF98;
+    --color-vanilla: #F3E5AB;
 
-    /* Hover colors */
-    /* --color-neon-yellow: #FFFF00; */
+    /* Hover dark colors */
+    /* --color-neon-yellow: #FFFF00; 
     --color-neon-orange: #FF9500;
-    --color-neon-pink: #FF007F;
+    --color-neon-pink: #FF007F; */
 }

@@ -1,19 +1,50 @@
 ---
 import MenuItem from "../components/MenuItem.astro";
 
-import { profile, navigation} from "../data/home";
+const id = "home"
+const name = "Gustavo Pérez";
+const role = "Fullstack Dev";
+const navigation = [
+    {
+        text: "Code Journey",
+        href: "#journey"
+    },
+    {
+        text: "Skills Forge",
+        href: "#skills"
+    },
+    {
+        text: "Build Lab",
+        href: "#lab"
+    },
+    {
+        text: "Byte of Me",
+        href: "#me"
+    }
+];
+
 ---
 
-<div class="w-full flex flex-col min-h-screen">
-    <!-- <h1 class="text-6xl md:text-10xl lg:text-12xl xl:text-14xl leading-none font-bold font-bebas-neue relative pt-2 w-1/2"> -->
-        <!-- {profile.name} -->
-        <!-- <span class="relative block transform -skew-y-3 origin-right rotate-1 sm:text-2xl md:text-4xl lg:text-8xl font-bold text-gray-blue font-fira-code dark:text-green-light">{profile.role}</span> -->
-    <!-- </h1> -->
-    <div class="flex items-center gap-4">
-        { 
-            navigation.map(({text, href}) => (
+<section id={id} class="min-h-screen">
+    <div class="w-full flex flex-col items-center">
+        <h1 class="text-8xl md:text-[10rem] lg:text-[12rem] xl:text-[16rem] leading-none font-bold font-bebas-neue text-center">
+            {name}
+        </h1>
+        <h2 class="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-marker dark:text-mint text-gray-blue">
+            <!--
+            <!-- 
+            class="transform -skew-y-3 origin-right rotate-1"
+            -->
+            {role}
+        </h2>
+        <!-- 
+        <div class="flex items-center gap-4">
+            { 
+                navigation.map(({text, href}) => (
                 <MenuItem href={href} text={text} />
-            ))
-        }
-    </div> 
-</div>
+                ))
+            }
+        </div>  
+        -->
+    </div>
+</section>
