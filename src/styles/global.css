@@ -17,15 +17,19 @@
 
     /* Light */
     --color-gray-blue: #BCC9D2;
+    --color-deep-blue: #1F01B9;
+
     /* Hover colors */
     --color-neon-green: #39FF14;
     --color-neon-purple: #D600FF;
     --color-neon-blue: #00E1FF;
 
     /* Dark */
-    --color-green-light: #DCF763;
+    /* --color-neon-yellow: #B88C22; */
+    --color-yellow-light: #FFF5BA;
+
     /* Hover colors */
-    --color-neon-yellow: #FFFF00;
+    /* --color-neon-yellow: #FFFF00; */
     --color-neon-orange: #FF9500;
     --color-neon-pink: #FF007F;
 }
