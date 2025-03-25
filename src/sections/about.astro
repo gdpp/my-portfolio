@@ -1,18 +1,19 @@
 ---
-import {presentation, profession, life, ending, images} from '../data/byteOfMe';
+import {presentation, profession, life, ending, mobile, images} from '../data/byteOfMe';
 ---
 
-<div class="w-full flex min-h-screen bg-amber-200">
-    <div class="flex flex-col gap-4 w-1/2">
-        <!-- 
+<div class="w-full flex flex-col-reverse pt-6">
+    <div class="hidden gap-4 w-full text-justify leading-relaxed tracking-wide max-w-prose text-xl md:flex md:flex-col lg:w-1/2">
         <p>{presentation}</p>
         <p>{profession}</p>
         <p>{life}</p>
         <p>{ending}</p>
-        -->
     </div>
-    <div class="w-1/2">
-        <!--  
+    <div class="flex flex-col gap-2 text-lg text-justify leading-relaxed tracking-wide max-w-prose w-full md:hidden">
+        <p>{mobile}</p>
+    </div>
+    <div class="w-full lg:w-1/2">
+        <!-- 
         <p>{images}</p>
         -->
     </div>

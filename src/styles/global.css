@@ -7,7 +7,6 @@
     --color-white: #FAFAFF;
     --color-black: #0F0A0A;
     --text-10xl: 10rem;
-    --text-12xl: 14rem;
     --text-14xl: 18rem;
 
     /* Fonts */
@@ -19,10 +18,14 @@
     /* Light */
     --color-gray-blue: #BCC9D2;
     /* Hover colors */
-
+    --color-neon-green: #39FF14;
+    --color-neon-purple: #D600FF;
+    --color-neon-blue: #00E1FF;
 
     /* Dark */
     --color-green-light: #DCF763;
     /* Hover colors */
-
+    --color-neon-yellow: #FFFF00;
+    --color-neon-orange: #FF9500;
+    --color-neon-pink: #FF007F;
 }

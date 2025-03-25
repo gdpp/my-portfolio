@@ -1,6 +1,4 @@
-export const buildLab = {
-    title: "Build Lab",
-    done: [
+export const done = [
         {
             title: "",
             description: "",
@@ -9,15 +7,15 @@ export const buildLab = {
             live_site: "",
             status: "Completed - Online"
         }
-    ],
-    in_progress: [
-        {
-            title: "",
-            description: "",
-            responsibilities: [],
-            technologies: [],
-            live_site: "",
-            status: "In Development - Offline"
-        }
-    ]
-}
+];
+
+export const inProgress = [
+    {
+        title: "",
+        description: "",
+        responsibilities: [],
+        technologies: [],
+        live_site: "",
+        status: "In Development - Offline"
+    }
+];
