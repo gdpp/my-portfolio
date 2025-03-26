@@ -2,7 +2,9 @@
 import MenuItem from "../components/MenuItem.astro";
 
 const id = "home"
-const name = "Gustavo Pérez";
+const fullName = "Gustavo Pérez";
+const name = "Gustavo";
+const lastName = "Pérez";
 const role = "Fullstack Dev";
 const navigation = [
     {
@@ -25,16 +27,14 @@ const navigation = [
 
 ---
 
-<section id={id} class="min-h-screen">
+<section id={id} class="min-h-screen bg-amber-100">
     <div class="w-full flex flex-col items-center">
-        <h1 class="text-8xl md:text-[10rem] lg:text-[12rem] xl:text-[16rem] leading-none font-bold font-bebas-neue text-center">
-            {name}
+        <h1 class="text-8xl md:text-[16rem] lg:text-[14rem] xl:text-[16rem] 2xl:text-[22rem] leading-none font-bold font-bebas-neue text-center">
+            <span class="xl:hidden">{fullName}</span>
+            <span class="hidden lg:block">{name}</span>
+            <span class="hidden lg:block">{lastName}</span>
         </h1>
-        <h2 class="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-marker dark:text-mint text-gray-blue">
-            <!--
-            <!-- 
-            class="transform -skew-y-3 origin-right rotate-1"
-            -->
+        <h2 class="text-2xl md:text-4xl lg:text-6xl font-marker dark:text-mint text-gray-blue">
             {role}
         </h2>
         <!-- 
