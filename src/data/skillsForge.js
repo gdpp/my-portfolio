@@ -30,7 +30,7 @@ export const frontend = [
         level: 5 
     },
     {
-        name: "CSS",
+        name: "Css",
         icon: "",
         level: 5
     },

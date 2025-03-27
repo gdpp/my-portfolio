@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:opsz@14..32&family=Permanent+Marker&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:opsz@14..32&family=Permanent+Marker&family=Roboto+Slab:wght@900&family=Space+Mono:wght@700&display=swap');
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -11,9 +11,11 @@
     /* h1 */
     --font-bebas-neue: "Bebas Neue", sans-serif;
     /* h2 */
-    --font-marker: "Permanent Marker", cursive;
+    --font-roboto: "Roboto Slab", serif;
     /* h3 */
     --font-space-mono: "Space Mono", monospace;
+    /* menu */
+    --font-marker: "Permanent Marker", cursive;
     /* body */
     --font-inter: "Inter", sans-serif;
 
@@ -22,16 +24,20 @@
     --color-deep-blue: #072AC8;
 
     /* Hover light colors */
-    /* --color-neon-green: #39FF14;
+    /*
+    --color-neon-green: #39FF14;
     --color-neon-purple: #D600FF;
-    --color-neon-blue: #00E1FF; */
+    --color-neon-blue: #00E1FF;
+    */
 
     /* Dark */
     --color-mint: #98FF98;
     --color-vanilla: #F3E5AB;
 
     /* Hover dark colors */
-    /* --color-neon-yellow: #FFFF00; 
+    /*
+    --color-neon-yellow: #FFFF00; 
     --color-neon-orange: #FF9500;
-    --color-neon-pink: #FF007F; */
+    --color-neon-pink: #FF007F;
+    */
 }

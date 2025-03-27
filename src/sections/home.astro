@@ -2,9 +2,7 @@
 import MenuItem from "../components/MenuItem.astro";
 
 const id = "home"
-const fullName = "Gustavo Pérez";
-const name = "Gustavo";
-const lastName = "Pérez";
+const name = "Gustavo Pérez";
 const role = "Fullstack Dev";
 const navigation = [
     {
@@ -27,24 +25,27 @@ const navigation = [
 
 ---
 
-<section id={id} class="min-h-screen bg-amber-100">
-    <div class="w-full flex flex-col items-center">
-        <h1 class="text-8xl md:text-[16rem] lg:text-[14rem] xl:text-[16rem] 2xl:text-[22rem] leading-none font-bold font-bebas-neue text-center">
-            <span class="xl:hidden">{fullName}</span>
-            <span class="hidden lg:block">{name}</span>
-            <span class="hidden lg:block">{lastName}</span>
-        </h1>
-        <h2 class="text-2xl md:text-4xl lg:text-6xl font-marker dark:text-mint text-gray-blue">
-            {role}
-        </h2>
+<section id={id} class="min-h-screen">
+    <div class="w-full flex flex-col lg:flex-row lg:pt-8">
+        <div class="w-full lg:w-1/2">
+            <h1 class="text-8xl md:text-[11rem] xl:text-[16rem] 2xl:text-[30rem] leading-none font-bold font-bebas-neue text-center lg:text-left">
+                {name}
+            </h1>
+            <h2 class="text-2xl md:text-4xl xl:text-7xl 2xl:text-[10rem] font-roboto dark:text-mint text-gray-blue text-center lg:text-left">
+                {role}
+            </h2>
+        </div>
         <!-- 
-        <div class="flex items-center gap-4">
+        <div class="w-full lg:w-1/2 hidden lg:flex flex-col items-center justify-around">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
             { 
                 navigation.map(({text, href}) => (
-                <MenuItem href={href} text={text} />
+                    <MenuItem href={href} text={text} />
                 ))
-            }
-        </div>  
+            }  
+        </div>
         -->
     </div>
 </section>
